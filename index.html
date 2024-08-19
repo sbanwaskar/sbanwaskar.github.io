@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Hi, Welcome to my Github Pages Site</h1>
-        <nav>
-            <ul>
-                <li><a href="Palindrome_Checker/index.html">Project 1</a></li>
-                <li><a href="Roman_Numeral_Coverter/index.html">Project 2</a></li>
-               
-            </ul>
-        </nav>
-    </header>
-   <main> 
-      <h2>About Myself</h2>
-        <p>As a Senior Web Developer with a flair for crafting digital experiences, I bring designs to life with precision and creativity. From sleek HTML structures to dynamic JavaScript magic, I specialize in building responsive, user-friendly interfaces. Dive in and discover how I blend art with code to create seamless web journeys. Let's transform your vision into a pixel-perfect reality!</p>
-    
-   </main>
-        
-    <footer>
-        <p>&copy; 2024 Shreya B</p>
-    </footer>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to my portfolio, where creativity meets code!</h1>
+      <p>Explore my projects and see what I can build.</p>
+      <h2>About Me</h2>
+      <p>Hello! I’m Shreya, a passionate Web Developer dedicated to crafting seamless and engaging web experiences. With a solid background in HTML, CSS, JavaScript, and modern Front-End frameworks, I thrive on turning complex challenges into intuitive and functional designs.
+      I started my journey by pursuing a Master's degree in Computer Science from New Mexico State University - Main Campus.</p>
+      <p>Over the years, I’ve had the privilege of working on diverse projects that showcase my ability to blend creativity with technical skill. From interactive user interfaces to responsive layouts, I take pride in delivering high-quality solutions that meet user needs. I thrive on weaving together aesthetics and functionality, crafting solutions that not only meet user needs but also spark delight and curiosity.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3><a href="Palindrome_Checker/index.html" target="_blank">Palindrome Builder</a></h3>
+        <p>Application that allows users to input any word or phrase and see it transformed into a palindrome.</p>
+      </div>
+      
+      <div class="project">
+        <h3><a href="Roman_Numeral_Coverter/index.html" target="_blank">Roman Numeral Converter</a></h3>
+        <p>Application that converts numbers between Roman numerals and their decimal equivalents.</p>
+      </div>
+      <div class="project">
+        <h3><a href="Calculator/index.html" target="_blank">Calculator</a></h3>
+        <p>Application that performs basic arithmetic operations like addition, subtraction, multiplication, and division.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me at <a href="mailto:shreyabanwaskar062@gmail.com">shreyabanwaskar062@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Shreya B. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
