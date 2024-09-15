@@ -14,6 +14,7 @@ body {
     color: #2c3e50;
     text-align: center;
     margin: 2rem 0;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .center-container {
@@ -30,6 +31,7 @@ body {
     padding: 2rem;
     width: 90%;
     max-width: 400px;
+    animation: slideUp 1s ease-out;
 }
 
 .card-body {
@@ -45,6 +47,11 @@ input[type="number"] {
     border: 1px solid #cbd5e0;
     border-radius: 4px;
     font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 10px 2px #3498db;
 }
 
 #convert-btn {
@@ -55,11 +62,15 @@ input[type="number"] {
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 #convert-btn:hover {
     background-color: #2980b9;
+}
+
+#convert-btn:active {
+    transform: scale(0.95);
 }
 
 #output {
@@ -67,10 +78,29 @@ input[type="number"] {
     font-size: 1.1rem;
     color: #2c3e50;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-result {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card-footer {
     margin-top: 1rem;
     text-align: center;
     color: #7f8c8d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
