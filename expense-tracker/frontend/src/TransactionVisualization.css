@@ -1,0 +1,19 @@
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ebf8ff; /* Light blue background */
+}
+
+.chart-wrapper {
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden; /* Prevents overflow */
+}
